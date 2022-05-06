@@ -367,7 +367,7 @@ export class KeyPair extends Construct implements ITaggable {
     });
 
     const fn = new aws_lambda.Function(stack, constructName, {
-      functionName: `${this.prefix}-${cleanID}`,
+      // functionName: `${this.prefix}-${cleanID}`,
       role: role,
       description: 'Custom CFN resource: Manage EC2 Key Pairs',
       runtime: aws_lambda.Runtime.NODEJS_14_X,
